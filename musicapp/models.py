@@ -22,7 +22,7 @@ class Song(models.Model):
         return self.title
 
 
-class lyric(models.Model):
+class Lyric(models.Model):
     content = models.TextField()
     song_id = models.ForeignKey(Song, on_delete = models.CASCADE)
 
